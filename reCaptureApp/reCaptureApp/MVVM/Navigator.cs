@@ -6,10 +6,5 @@ namespace reCaptureApp.MVVM
         public Navigator()
         {
         }
-
-        public void NavigateMainPage(ViewModelBase viewModelInstance)
-        {
-
-        }
     }
 }

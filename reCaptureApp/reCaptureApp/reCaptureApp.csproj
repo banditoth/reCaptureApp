@@ -11,8 +11,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1829-pre6" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1-preview1" />
-    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0-pre6" />
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="banditoth.Forms.RecurrenceToolkit.MVVM" Version="1.1.3" />
+    <PackageReference Include="banditoth.Forms.RecurrenceToolkit.Multilanguage" Version="1.1.1" />
+    <PackageReference Include="banditoth.Forms.RecurrenceToolkit.Converters" Version="1.1.1" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0-pre2" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Translations.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translations.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\Translations.Designer.cs">
+      <DependentUpon>Translations.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
